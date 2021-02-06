@@ -1,0 +1,49 @@
+body {
+  background: #ffde59;
+  /* width: 100%;ページ全体の幅は100％とする */
+  width: 100%;
+  /* ページ全体を中央揃えにする */
+  text-align: center;
+  font-family: "Arial" "メイリオ";
+}
+header {
+  background: #ffde59;
+  padding: 0.5rem;
+  text-align: right;
+}
+.top-img {
+  width: 200px;
+}
+.nav1 {
+  width: 50px;
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+  text-align: center;
+}
+li {
+  margin: 2rem 0;
+}
+nav {
+  background: #ffbd4a;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 0;
+  transition: 0.5s;
+}
+/* メニューを開いた時 */
+nav.open-menu {
+  width: 100%;
+}
+
+.gacha_button {
+  width: 300px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  transform: rotate(360deg);
+}
