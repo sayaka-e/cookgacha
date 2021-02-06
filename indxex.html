@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+      ,user-scalable="no"
+    />
+    <title>Cookガチャ！</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="nav1" src="img/nav-rogo.png" alt="？" />
+      <nav>
+        <ul>
+          <li>
+            「今日は何を作ろう？」を考えるのが面倒！！「誰かに決めてもらいたい！」そんな時にガチャってみるのはいかがです？
+          </li>
+          <li>
+            <h3>【使い方】</h3>
+            <p>１．使いたい食材・調味料を最大３つまで入力！</p>
+            <p>２．除外したい食材・調味料を最大３つまで入力！</p>
+            <p>３．心の中で「今日、何食べたい？」と呟きながらガチャ！</p>
+            <p>★スマホの場合は「ホーム画面に追加」しておくと便利♪</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <img class="top-img" src="img/rogo.png" alt="ロゴ" />
+      <h3>使いたい食材</h3>
+      <!-- キーワードの入力は最大３つまで -->
+      <input type="text" name="example1" />
+      <input type="text" name="example2" />
+      <input type="text" name="example3" />
+      <h3>除外したい食材</h3>
+      <!-- キーワードの入力はフリー -->
+      <input type="text" name="example4" />
+      <input type="text" name="example5" />
+      <input type="text" name="example6" />
+      <section>
+        <!-- ↓ガチャる！ボタンを設置 -->
+        <img class="gacha_button" src="img/gacha.png" alr="ガチャボタン" />
+      </section>
+      <p>↓↓たまには”ラク”してもいいんじゃない？↓↓</p>
+      <!-- ここに楽天アフェリエイトを埋め込む「おかずランキング」 -->
+    </main>
+    <footer>
+      <p>e.sayaka@2021.2.14</p>
+    </footer>
+    <script>
+      const btn = document.querySelector(".nav1");
+      const nav = document.querySelector("nav");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("open-menu");
+      });
+    </script>
+  </body>
+</html>
